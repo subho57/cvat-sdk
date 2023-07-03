@@ -41,4 +41,4 @@ cd "$DST_DIR" && rm -rf node_modules yarn.lock && yarn install && yarn lint-fix 
 
 cd "$DST_DIR" && git add . && git commit -m "chore(deps): update SDK to $VERSION" && git push && git tag -a "$VERSION" -m "SDK version $VERSION" && git push origin "$VERSION"
 
-cd "$DST_DIR" && git checkout master && git branch -b "release-$VERSION" && git push origin -u "release-$VERSION"
+cd "$DST_DIR" && git checkout main && git branch -b "release-$VERSION" && git push origin -u "release-$VERSION"
