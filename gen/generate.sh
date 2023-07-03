@@ -39,6 +39,4 @@ rm -rf "$DST_DIR/$SOURCE_DIR/.openapi-generator"
 
 cd "$DST_DIR" && rm -rf node_modules yarn.lock && yarn install && yarn lint-fix && yarn build
 
-cd "$DST_DIR" && git add . && git commit -m "chore(deps): update SDK to $VERSION" && git push && git tag -a "$VERSION" -m "SDK version $VERSION" && git push origin "$VERSION"
-
-cd "$DST_DIR" && git checkout main && git branch -b "release-$VERSION" && git push origin -u "release-$VERSION"
+cd "$DST_DIR" && git add . && git commit -m "chore(deps): update SDK to $VERSION" && git push --no-verify && git tag -a "v$VERSION" -m "SDK version $VERSION" && git push origin "tags/v$VERSION" --no-verify
