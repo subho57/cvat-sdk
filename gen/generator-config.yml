@@ -1,0 +1,16 @@
+additionalProperties:
+  npmName: "cvat-sdk"
+  snapshot: false
+  supportsES6: true
+  withInterfaces: false
+  withNodeImports: true
+  withSeparateModelsAndApi: true
+  apiPackage: "api-client"
+  modelPackage: "models"
+  legacyDiscriminatorBehavior: false
+  useSingleRequestParameter: true
+  inlineSchemaNameMapping: true
+globalProperties:
+  generateAliasAsModel: true
+  apiTests: false
+  modelTests: false

@@ -7,8 +7,8 @@ workflow automation and writing custom CVAT server clients.
 
 The SDK API includes several layers:
 
-- Server API wrappers (`ApiClient`). Located in at [`cvat-sdk/api-client`](./src/api-client/).
-- High-level tools (`Core`). Located at [`cvat-sdk/core`](./src/core).
+- [x] Server API wrappers. Located in at [`cvat-sdk`](./src/api-client/).
+- [ ] TODO: High-level tools (`Core`). Located at [`cvat-sdk/core`](./src/core).
 
 Package documentation is available [here](https://subho57.github.io/cvat-sdk/docs).
 
@@ -23,8 +23,17 @@ npm install cvat-sdk # or yarn add cvat-sdk
 After installation, you can import the package:
 
 ```typescript
-import { ApiClient, Configuration, TasksApi } from 'cvat-sdk/api-client';
-import { Core } from 'cvat-sdk/core';
+import { Configuration, TasksApi } from 'cvat-sdk';
+
+const configuration = new Configuration({
+  username: CONFIG.CVAT.USERNAME,
+  password: CONFIG.CVAT.PASSWORD,
+});
+
+const tasksApi = new TasksApi(configuration);
+const task = await tasksApi.tasksRetrieve({
+  id: 1,
+});
 ```
 
 [![cvat-sdk npminsights.com](https://npminsights.com/api/package/readme-image/cvat-sdk?v=2023-02-22)](https://npminsights.com/package/cvat-sdk)
