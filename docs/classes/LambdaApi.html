@@ -27,7 +27,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">LambdaApi</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L576">api-client/lambda-api.ts:576</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L659">api-client/lambda-api.ts:659</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -47,6 +47,7 @@
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="LambdaApi.html#lambdaCreateFunctions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>lambda<wbr/>Create<wbr/>Functions</span></a>
 <a href="LambdaApi.html#lambdaCreateRequests" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Create<wbr/>Requests</span></a>
+<a href="LambdaApi.html#lambdaDeleteRequests" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Delete<wbr/>Requests</span></a>
 <a href="LambdaApi.html#lambdaListFunctions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>List<wbr/>Functions</span></a>
 <a href="LambdaApi.html#lambdaListRequests" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>List<wbr/>Requests</span></a>
 <a href="LambdaApi.html#lambdaRetrieveFunctions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Retrieve<wbr/>Functions</span></a>
@@ -71,7 +72,7 @@
 <h4 class="tsd-returns-title">Returns <a href="LambdaApi.html" class="tsd-signature-type tsd-kind-class">LambdaApi</a></h4><aside class="tsd-sources">
 <p>Inherited from BaseAPI.constructor</p>
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/base.ts#L53">base.ts:53</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/base.ts#L53">base.ts:53</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="axios" class="tsd-anchor"></a>
@@ -79,19 +80,19 @@
 <div class="tsd-signature"><span class="tsd-kind-property">axios</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">AxiosInstance</span><span class="tsd-signature-symbol"> = globalAxios</span></div><aside class="tsd-sources">
 <p>Inherited from BaseAPI.axios</p>
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/base.ts#L53">base.ts:53</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/base.ts#L53">base.ts:53</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="basePath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>base<wbr/>Path</span><a href="#basePath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">base<wbr/>Path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = BASE_PATH</span></div><aside class="tsd-sources">
 <p>Inherited from BaseAPI.basePath</p>
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/base.ts#L53">base.ts:53</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/base.ts#L53">base.ts:53</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="configuration" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>configuration</span><a href="#configuration" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">configuration</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Configuration.html" class="tsd-signature-type tsd-kind-class">Configuration</a></div><aside class="tsd-sources">
 <p>Inherited from BaseAPI.configuration</p>
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/base.ts#L51">base.ts:51</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/base.ts#L51">base.ts:51</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="lambdaCreateFunctions" class="tsd-anchor"></a>
@@ -120,7 +121,7 @@
 <h4>Memberof</h4><p>LambdaApi</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L584">api-client/lambda-api.ts:584</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L667">api-client/lambda-api.ts:667</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="lambdaCreateRequests" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lambda<wbr/>Create<wbr/>Requests</span><a href="#lambdaCreateRequests" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -147,7 +148,34 @@
 <h4>Memberof</h4><p>LambdaApi</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L596">api-client/lambda-api.ts:596</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L679">api-client/lambda-api.ts:679</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="lambdaDeleteRequests" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>lambda<wbr/>Delete<wbr/>Requests</span><a href="#lambdaDeleteRequests" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="lambdaDeleteRequests.lambdaDeleteRequests-1"><span class="tsd-kind-call-signature">lambda<wbr/>Delete<wbr/>Requests</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">requestParameters</span>, <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#lambdaDeleteRequests.lambdaDeleteRequests-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">requestParameters</span>: <a href="../interfaces/LambdaApiLambdaDeleteRequestsRequest.html" class="tsd-signature-type tsd-kind-interface">LambdaApiLambdaDeleteRequestsRequest</a></h5>
+<div class="tsd-comment tsd-typography"><p>Request parameters.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">options</span>: <span class="tsd-signature-type ">AxiosRequestConfig</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>Override http request option.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<div class="tsd-comment tsd-typography">
+<h4>Summary</h4><p>Method cancels the request</p>
+
+<h4>Throws</h4>
+<h4>Memberof</h4><p>LambdaApi</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L691">api-client/lambda-api.ts:691</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="lambdaListFunctions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lambda<wbr/>List<wbr/>Functions</span><a href="#lambdaListFunctions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -169,7 +197,7 @@
 <h4>Memberof</h4><p>LambdaApi</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L607">api-client/lambda-api.ts:607</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L702">api-client/lambda-api.ts:702</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="lambdaListRequests" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lambda<wbr/>List<wbr/>Requests</span><a href="#lambdaListRequests" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -191,7 +219,7 @@
 <h4>Memberof</h4><p>LambdaApi</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L618">api-client/lambda-api.ts:618</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L713">api-client/lambda-api.ts:713</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="lambdaRetrieveFunctions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lambda<wbr/>Retrieve<wbr/>Functions</span><a href="#lambdaRetrieveFunctions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -218,7 +246,7 @@
 <h4>Memberof</h4><p>LambdaApi</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L630">api-client/lambda-api.ts:630</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L725">api-client/lambda-api.ts:725</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="lambdaRetrieveRequests" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lambda<wbr/>Retrieve<wbr/>Requests</span><a href="#lambdaRetrieveRequests" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -245,7 +273,7 @@
 <h4>Memberof</h4><p>LambdaApi</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/5e78d07/src/api-client/lambda-api.ts#L642">api-client/lambda-api.ts:642</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/subho57/cvat-sdk-js/blob/e63095d/src/api-client/lambda-api.ts#L737">api-client/lambda-api.ts:737</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -271,6 +299,7 @@
 <li><a href="#configuration" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>configuration</span></a></li>
 <li><a href="#lambdaCreateFunctions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Create<wbr/>Functions</span></a></li>
 <li><a href="#lambdaCreateRequests" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Create<wbr/>Requests</span></a></li>
+<li><a href="#lambdaDeleteRequests" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Delete<wbr/>Requests</span></a></li>
 <li><a href="#lambdaListFunctions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>List<wbr/>Functions</span></a></li>
 <li><a href="#lambdaListRequests" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>List<wbr/>Requests</span></a></li>
 <li><a href="#lambdaRetrieveFunctions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lambda<wbr/>Retrieve<wbr/>Functions</span></a></li>
@@ -449,6 +478,7 @@
 <li><a href="../interfaces/LabelsSummary.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Labels<wbr/>Summary</span></a></li>
 <li><a href="../interfaces/LambdaApiLambdaCreateFunctionsRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Lambda<wbr/>Api<wbr/>Lambda<wbr/>Create<wbr/>Functions<wbr/>Request</span></a></li>
 <li><a href="../interfaces/LambdaApiLambdaCreateRequestsRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Lambda<wbr/>Api<wbr/>Lambda<wbr/>Create<wbr/>Requests<wbr/>Request</span></a></li>
+<li><a href="../interfaces/LambdaApiLambdaDeleteRequestsRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Lambda<wbr/>Api<wbr/>Lambda<wbr/>Delete<wbr/>Requests<wbr/>Request</span></a></li>
 <li><a href="../interfaces/LambdaApiLambdaRetrieveFunctionsRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Lambda<wbr/>Api<wbr/>Lambda<wbr/>Retrieve<wbr/>Functions<wbr/>Request</span></a></li>
 <li><a href="../interfaces/LambdaApiLambdaRetrieveRequestsRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Lambda<wbr/>Api<wbr/>Lambda<wbr/>Retrieve<wbr/>Requests<wbr/>Request</span></a></li>
 <li><a href="../interfaces/LoginSerializerExRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Login<wbr/>Serializer<wbr/>Ex<wbr/>Request</span></a></li>
