@@ -52,7 +52,7 @@
   },
   "author": "subho57",
   "license": "MIT",
-  "packageManager": "yarn@4.0.1",
+  "packageManager": "yarn@4.0.2",
   "dependencies": {
     "axios": "^0.27.2"
   },
