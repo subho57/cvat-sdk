@@ -16,7 +16,7 @@ SCHEMA_PATH="https://raw.githubusercontent.com/opencv/cvat/master/cvat/schema.ym
 
 rm -f -r "$DOCS_DIR" "${DST_DIR}/${LAYER1_LIB_NAME}" "${DST_DIR}/${LAYER2_LIB_NAME}"
 wget -O "$GEN_DIR/schema.yml" "$SCHEMA_PATH"
-
+python3 -m pip install niet
 VERSION=$(niet ".info.version" "$GEN_DIR/schema.yml")
 
 # Pass template dir here
@@ -37,6 +37,6 @@ jq -c '.version = $version' --arg version "$VERSION" "$DST_DIR/package.json" > t
 rm "$GEN_DIR/schema.yml"
 rm -rf "$DST_DIR/$SOURCE_DIR/.openapi-generator"
 
-cd "$DST_DIR" && rm -rf node_modules yarn.lock && yarn install && yarn lint-fix && yarn build
+cd "$DST_DIR" && rm -rf node_modules bun.lock && bun install && bun lint-fix && bun run build
 
 cd "$DST_DIR" && git add . && git commit -m "chore(deps): update SDK to $VERSION" && git push --no-verify && git tag -a "v$VERSION" -m "SDK version $VERSION" && git push origin "tags/v$VERSION" --no-verify
