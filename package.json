@@ -1,6 +1,6 @@
 {
   "name": "cvat-sdk",
-  "version": "2.30.0",
+  "version": "2.31.0",
   "description": "CVAT SDK is a Javascript library. It provides you access to Javascript functions and objects that simplify server interaction and provide additional functionality like data validation and serialization.",
   "repository": {
     "type": "git",
